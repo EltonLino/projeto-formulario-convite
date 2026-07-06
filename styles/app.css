@@ -1,0 +1,36 @@
+#app{
+
+    display: flex;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    overflow: hidden;
+    width: 99vw;
+
+    & .cover{
+        display: flex;
+        flex-shrink: 0;
+        width: 25rem;
+        height: 100vh;
+        border-radius: .75rem;
+        background-color: aqua;
+        background: no-repeat center/cover url(../assets/img/Background.png);
+
+        & .title{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            padding: 2rem;
+            gap: 1rem;
+
+            & img{
+                width: 3rem;
+                height: 3rem;
+            }
+
+            & p{
+                font: var(--text);
+                color: var(--text-heading);
+            }
+        }
+    }
+}

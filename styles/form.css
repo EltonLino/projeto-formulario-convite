@@ -1,0 +1,9 @@
+#form{
+    background-color: var(--shape-body);
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: .75rem;
+    flex-grow: 1;
+    overflow-y: auto;
+}
