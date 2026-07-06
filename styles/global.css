@@ -56,3 +56,22 @@ h3{
 body{
     background-color: var(--shape-background);
 }
+
+fieldset{
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.cabecalho{
+    display: flex;
+    gap: .75rem;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 1.5rem;
+        height: 1.25rem;
+        aspect-ratio: 1/1;
+    }
+    
+}

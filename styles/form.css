@@ -6,4 +6,13 @@
     border-radius: .75rem;
     flex-grow: 1;
     overflow-y: auto;
+
+    & .container-form{
+        margin-inline: 8.125rem;
+        margin-block: 5rem;
+
+        & h2{
+            margin-bottom: 2.5rem;
+        }
+    }
 }
