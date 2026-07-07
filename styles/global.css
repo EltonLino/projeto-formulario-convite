@@ -62,6 +62,10 @@ fieldset{
     margin-bottom: 3rem;
 }
 
+legend{
+    margin-bottom: 1.5rem;
+}
+
 .cabecalho{
     display: flex;
     gap: .75rem;
