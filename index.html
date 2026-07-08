@@ -24,20 +24,24 @@
         <div id="form">
           <div class="container-form">
             <h2>Crie seu convite</h2>
-            <fieldset>
+            <form action="">
+              <fieldset>
               <legend class="cabecalho">
                 <img src="assets/icons/calendar.svg" alt="">
                 <h3>Sobre o evento</h3>
               </legend>
               <div class="input-wrapper">
                   <label for="title">Título</label>
-                  <input type="text" name="title" id="title" placeholder="Nome do evento">
-                  <span class="flex center">
-                    <img src="assets/icons/circle-alert.svg" alt="Icone de alerta">
+                  <input type="text" name="title" id="title" placeholder="Nome do evento" required>
+                  <span class="alert flex center">
+                    <span class="alert-icon"></span>
                     <small>Item obrigatório</small>
                   </span>
                 </div>
             </fieldset>
+              <button type="submit">Enviar</button>
+            </form>
+            
           </div>
         </div>
     </div>
