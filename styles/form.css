@@ -17,10 +17,34 @@
     }
 }
 
+.alert{
+    gap: .5rem;
+    font: var(--text-xs);
+    color: var(--danger);
+    display: none;
+
+    & .alert-icon{
+        width: 1rem;
+        height: 1rem;
+        aspect-ratio: 1/1;
+        background-color: var(--danger);
+        -webkit-mask: url('../assets/icons/circle-alert.svg') no-repeat center;
+        mask: url('../assets/icons/circle-alert.svg') no-repeat center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        display: inline-block;
+    }
+}
+
+
 .input-wrapper {
     display: flex;
     flex-direction: column;
     gap: .75rem;
+
+    &:has(input:user-invalid) .alert{
+        display: flex;
+    }
 
     & label{
         font: var(--text-sm);
@@ -38,18 +62,16 @@
         font: var(--text);
         color: var(--text-body);
 
+
+
         &::placeholder{
             color: var(--input-placeholder);
         }
 
         &:focus{
-        border: 1px solid var(--brand-light);
-        color: var(--text-heading);
-        outline: none;
-        }
-
-        &:user-invalid + .alert{
-            display: flex;
+            border: 1px solid var(--brand-light);
+            color: var(--text-heading);
+            outline: none;
         }
 
         &:user-invalid {
@@ -57,25 +79,133 @@
             outline: none;
         }
     }
+}
 
+.radio-wrapper{
 
-    & .alert{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    &:has(input[type="radio"]:user-invalid) .alert{
+        display: flex
+    }
+
+    & label{
+        font: var(--text-sm);
+        color: var(--text-body);
+    }
+
+    & .type-option{
+    display: flex;
+    justify-content: space-around;
+    padding: .25rem;
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+
+    &:has(input[type="radio"]:user-invalid) {
+        border: 1px solid var(--danger);
+    }
+
+    & .option{
+        display: flex;
+        width: 100%;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5rem;
         gap: .5rem;
-        font: var(--text-xs);
-        color: var(--danger);
-        display: none;
+        cursor: pointer;
 
-        & .alert-icon{
+        & input[type="radio"]{
+            display: none;
+        }
+
+        
+
+    }
+        
+    }
+
+    & .icon-inperson{
         width: 1rem;
         height: 1rem;
         aspect-ratio: 1/1;
-        background-color: var(--danger);
-        -webkit-mask: url('../assets/icons/circle-alert.svg') no-repeat center;
-        mask: url('../assets/icons/circle-alert.svg') no-repeat center;
+        -webkit-mask: url('../assets/icons/building-2.svg') no-repeat center;
+        mask: url('../assets/icons/building-2.svg') no-repeat center;
         -webkit-mask-size: contain;
         mask-size: contain;
         display: inline-block;
-        }
     }
 
+    & .icon-online{
+        width: 1rem;
+        height: 1rem;
+        aspect-ratio: 1/1;
+        -webkit-mask: url('../assets/icons/video.svg') no-repeat center;
+        mask: url('../assets/icons/video.svg') no-repeat center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        display: inline-block;
+    }
+
+    & .icon-option-color{
+        background-color: var(--input-placeholder);
+    }
+
+    & .option:has(input[type="radio"]:checked){
+        background-color: var(--shape-hover);
+        transition: .5s;
+
+        & .icon-option-color{
+            background-color: var(--brand-light);
+        }
+
+
+
+    }
 }
+
+.text-area-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    :has(textarea:user-invalid) .alert {
+    display: flex;
+}
+
+    & label{
+        font: var(--text-sm);
+        color: var(--text-body);
+    }
+
+    & textarea{
+        width: 100%;
+        height: 3rem;
+        background-color: var(--input-base);
+        border-radius: .5rem;
+        border: 1px solid var(--input-stroke);
+        padding-block: .75rem;
+        padding-inline: 1rem;
+        font: var(--text);
+        color: var(--text-body);
+
+        &::placeholder{
+            color: var(--input-placeholder);
+        }
+
+        &:focus{
+            border: 1px solid var(--brand-light);
+            color: var(--text-heading);
+            outline: none;
+        }
+
+        &:user-invalid {
+            border: 1px solid var(--danger);
+            outline: none;
+        }
+    }
+}
+   

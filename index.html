@@ -10,40 +10,121 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <div id="app" class="flex">
-        <div class="cover">
-            <div class="title">
-                <img src="assets/Logo.svg" alt="Logo do Festivite">
-                <h1>Festivite</h1>
-                <p>Crie um convite digital para o seu evento</p>
-            </div>
+      <div class="cover">
+        <div class="title">
+          <img src="assets/Logo.svg" alt="Logo do Festivite" />
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
         </div>
-        <div id="form">
-          <div class="container-form">
-            <h2>Crie seu convite</h2>
-            <form action="">
-              <fieldset>
+      </div>
+      <div id="form">
+        <div class="container-form">
+          <h2>Crie seu convite</h2>
+          <form action="">
+            <fieldset>
               <legend class="cabecalho">
-                <img src="assets/icons/calendar.svg" alt="">
+                <img src="assets/icons/calendar.svg" alt="" />
                 <h3>Sobre o evento</h3>
               </legend>
               <div class="input-wrapper">
-                  <label for="title">Título</label>
-                  <input type="text" name="title" id="title" placeholder="Nome do evento" required>
-                  <span class="alert flex center">
-                    <span class="alert-icon"></span>
-                    <small>Item obrigatório</small>
-                  </span>
+                <label for="title">Título</label>
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="Nome do evento"
+                  required
+                />
+                <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="initial-date">Início</label>
+                <input
+                  type="datetime"
+                  name="initial-date"
+                  id="initial-date"
+                  placeholder="DD/MM/AAAA, --:--"
+                  required
+                />
+                <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="end-date">Fim</label>
+                <input
+                  type="datetime"
+                  name="end-date"
+                  id="end-date"
+                  placeholder="DD/MM/AAAA, --:--"
+                  required
+                />
+                <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+              </div>
+
+              <div class="radio-wrapper">
+                <label for="type">Tipo</label>
+                <div class="type-option flex">
+                  <label class="option flex center" for="presencial">
+                    <span class="icon-option-color icon-inperson"></span>
+                    <span>Presencial</span>
+                    <input type="radio" name="type" id="presencial" required />
+                  </label>
+                  <label class="option flex center" for="online">
+                    <span class="icon-option-color icon-online"></span>
+                    <span>Online</span>
+                    <input type="radio" name="type" id="online" required />
+                  </label>
                 </div>
+                <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="locale">Local</label>
+                <input
+                  type="text"
+                  name="locale"
+                  id="locale"
+                  placeholder="Link ou endereço"
+                  required
+                />
+                <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+              </div>
+
+              <div class="text-area-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" required>
+
+                </textarea>
+                <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+              </div>
             </fieldset>
-              <button type="submit">Enviar</button>
-            </form>
-            
-          </div>
+            <button type="submit">Enviar</button>
+          </form>
         </div>
+      </div>
     </div>
   </body>
 </html>
