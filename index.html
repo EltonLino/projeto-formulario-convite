@@ -30,7 +30,8 @@
                 <img src="assets/icons/calendar.svg" alt="" />
                 <h3>Sobre o evento</h3>
               </legend>
-              <div class="input-wrapper">
+              <div class="container-event">
+                <div class="input-wrapper">
                 <label for="title">Título</label>
                 <input
                   type="text"
@@ -112,14 +113,14 @@
 
               <div class="text-area-wrapper">
                 <label for="description">Descrição</label>
-                <textarea name="description" id="description" required>
-
-                </textarea>
+                <textarea name="description" id="description" required placeholder="Escreva sobre os detalhes do evento"></textarea>
                 <span class="alert flex center">
                   <span class="alert-icon"></span>
                   <small>Item obrigatório</small>
                 </span>
               </div>
+              </div>
+              
             </fieldset>
             <button type="submit">Enviar</button>
           </form>
