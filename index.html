@@ -31,7 +31,7 @@
                 <h3>Sobre o evento</h3>
               </legend>
               <div class="container-event">
-                <div class="input-wrapper">
+                <div class="input-wrapper titulo">
                 <label for="title">Título</label>
                 <input
                   type="text"
@@ -46,7 +46,7 @@
                 </span>
               </div>
 
-              <div class="input-wrapper">
+              <div class="input-wrapper inicio">
                 <label for="initial-date">Início</label>
                 <input
                   type="datetime"
@@ -61,7 +61,7 @@
                 </span>
               </div>
 
-              <div class="input-wrapper">
+              <div class="input-wrapper end">
                 <label for="end-date">Fim</label>
                 <input
                   type="datetime"
@@ -76,13 +76,13 @@
                 </span>
               </div>
 
-              <div class="radio-wrapper">
+              <div class="radio-wrapper type">
                 <label for="type">Tipo</label>
                 <div class="type-option flex">
                   <label class="option flex center" for="presencial">
                     <span class="icon-option-color icon-inperson"></span>
                     <span>Presencial</span>
-                    <input type="radio" name="type" id="presencial" required />
+                    <input type="radio" name="type" id="presencial" required checked/>
                   </label>
                   <label class="option flex center" for="online">
                     <span class="icon-option-color icon-online"></span>
@@ -96,7 +96,7 @@
                 </span>
               </div>
 
-              <div class="input-wrapper">
+              <div class="input-wrapper local">
                 <label for="locale">Local</label>
                 <input
                   type="text"
@@ -111,7 +111,7 @@
                 </span>
               </div>
 
-              <div class="text-area-wrapper">
+              <div class="text-area-wrapper description">
                 <label for="description">Descrição</label>
                 <textarea name="description" id="description" required placeholder="Escreva sobre os detalhes do evento"></textarea>
                 <span class="alert flex center">
