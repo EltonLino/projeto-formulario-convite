@@ -400,3 +400,77 @@
     }
 }
 
+.style-photo{
+    margin-top: 1rem;
+
+    & label{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        & .file-button{
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            background-color: var(--shape-button);
+            padding-block: .75rem;
+            padding-inline: .5rem;
+            cursor: pointer;
+            border-radius: .5rem;
+        }
+    }
+
+    & .icon-upload{
+        width: 1rem;
+        height: 1rem;
+        aspect-ratio: 1/1;
+        -webkit-mask: url('../assets/icons/upload.svg') no-repeat center;
+        mask: url('../assets/icons/upload.svg') no-repeat center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        display: inline-block;
+        background-color: var(--brand-light);
+    }
+
+    & input[type="file"]{
+        font: var(--text-sm);
+        color: var(--input-placeholder);
+    }
+
+    & input[type="file"]::file-selector-button{
+        display: none;
+    }
+}
+
+.container-contact{
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: 
+    "G G"
+    "H I";
+
+    & .name-contact{
+        grid-area: G;
+    }
+
+    & .email{
+        grid-area: H;
+    }
+
+    & .phone{
+        grid-area: I;
+    }
+}
+
+.footer{
+    flex-direction: column;
+    gap: .5rem;
+
+    & label{
+        display: flex;
+        gap: .5rem;
+    }
+}
+
+
+

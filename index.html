@@ -121,6 +121,7 @@
               </div>
               </div>
             </fieldset>
+
             <fieldset>
               <legend class="cabecalho">
                 <img src="assets/icons/paintbrush-vertical.svg" alt="">
@@ -186,6 +187,7 @@
                 </label>
               </div>
             </fieldset>
+
             <fieldset>
               <span class="title">Tema do evento</span>
               <div class="event-theme grid">
@@ -271,6 +273,65 @@
                     <span class="theme-label title"></span>
                   </div>
                 </div>
+                <div class="conatiner-photo">
+                  <span class="title">Foto de capa</span>
+                  <div class="style-photo">
+                    <label for="photo-upload">
+                      <div class="file-button">
+                        <span class="icon-upload"></span>
+                        <span>Selecionar</span>
+                      </div>
+                      <input type="file" name="photo-upload" id="photo-upload">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend class="cabecalho">
+                <img src="assets/icons/contact.svg" alt="">
+                <h3>Dados para contato</h3>
+              </legend>
+              <div class="container-contact">
+                <div class="input-wrapper name-contact">
+                  <label for="contact-name">Nome</label>
+                  <input type="text" name="contact-name" id="contact-name" placeholder="Nome completo" required>
+                  <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+                </div>
+
+                <div class="input-wrapper email">
+                  <label for="contact-email">E-mail</label>
+                  <input type="email" name="contact-email" id="contact-email" placeholder="exemplo@email.com" required>
+                  <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+              </div>
+               <div class="input-wrapper phone">
+                  <label for="contact-phone">Telefone</label>
+                  <input type="phone" name="contact-phone" id="contact-phone" placeholder="(99) 99999-9999" required>
+                  <span class="alert flex center">
+                  <span class="alert-icon"></span>
+                  <small>Item obrigatório</small>
+                </span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div class="footer flex">
+                <label for="termos"><span><input type="checkbox" name="termos" id="termos"></span>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>
+                </label>
+
+                <label for="acept-email"><span><input type="checkbox" name="acept-email" id="acept-email"></span>Aceito receber atualizações e promoções por e-mail
+                </label>
+
+                <label for="acept-phone"><span><input type="checkbox" name="acept-phone" id="acept-phone"></span>Aceito receber atualizações e promoções por SMS
+                </label>
               </div>
             </fieldset>
             <button type="submit">Enviar</button>
