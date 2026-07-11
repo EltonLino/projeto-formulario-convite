@@ -10,3 +10,14 @@
     align-items: center;
 }
 
+.color-circle.color-59B2FF::before { background-color: #59B2FF; }
+.color-circle.color-6A59FF::before { background-color: #6A59FF; }
+.color-circle.color-B259FF::before { background-color: #B259FF; }
+.color-circle.color-FF59F9::before { background-color: #FF59F9; }
+.color-circle.color-FF598B::before { background-color: #FF598B; }
+.color-circle.color-FF5959::before { background-color: #FF5959; }
+.color-circle.color-FF8B59::before { background-color: #FF8B59; }
+.color-circle.color-FFCD59::before { background-color: #FFCD59; }
+.color-circle.color-E1FF59::before { background-color: #E1FF59; }
+.color-circle.color-59FF91::before { background-color: #59FF91; }
+.color-circle.color-59FFF9::before { background-color: #59FFF9; }

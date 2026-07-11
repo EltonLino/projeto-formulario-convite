@@ -55,11 +55,6 @@
         display: flex;
     }
 
-    & label{
-        font: var(--text-sm);
-        color: var(--text-body);
-    }
-
     & input{
         width: 100%;
         height: 3rem;
@@ -100,10 +95,6 @@
         display: flex
     }
 
-    & label{
-        font: var(--text-sm);
-        color: var(--text-body);
-    }
 
     & .type-option{
     position: relative;
@@ -205,11 +196,6 @@
     display: flex;
 }
 
-    & label{
-        font: var(--text-sm);
-        color: var(--text-body);
-    }
-
     & textarea{
         width: 100%;
         height: 8.5rem;
@@ -261,3 +247,43 @@
 .description{
     grid-area: F;
 }
+
+.color-options{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    & label:has(input:checked) .color-circle{
+        border: 2px solid var(--brand-light);
+        outline: none;
+    }
+
+    & input[type="radio"]{
+        appearance: none;
+    }
+
+    & .color-circle{
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        outline: none;
+        background-color: var(--shape-button);
+        cursor: pointer;
+
+        &.color-circle::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        inset: .35rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        outline: none;
+        z-index: 1;
+        }
+    }
+}
+

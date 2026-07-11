@@ -80,3 +80,8 @@ legend{
     
 }
 
+label, .title{
+        font: var(--text-sm);
+        color: var(--text-body);
+}
+
