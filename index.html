@@ -32,99 +32,117 @@
               </legend>
               <div class="container-event">
                 <div class="input-wrapper titulo">
-                <label for="title">Título</label>
-                <input
-                  type="text"
-                  name="title"
-                  id="title"
-                  placeholder="Nome do evento"
-                  required
-                />
-                <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
-              </div>
-
-              <div class="input-wrapper inicio">
-                <label for="initial-date">Início</label>
-                <input
-                  type="datetime"
-                  name="initial-date"
-                  id="initial-date"
-                  placeholder="DD/MM/AAAA, --:--"
-                  required
-                />
-                <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
-              </div>
-
-              <div class="input-wrapper end">
-                <label for="end-date">Fim</label>
-                <input
-                  type="datetime"
-                  name="end-date"
-                  id="end-date"
-                  placeholder="DD/MM/AAAA, --:--"
-                  required
-                />
-                <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
-              </div>
-
-              <div class="radio-wrapper type">
-                <label for="type">Tipo</label>
-                <div class="type-option flex">
-                  <label class="option flex center" for="presencial">
-                    <span class="icon-option-color icon-inperson"></span>
-                    <span>Presencial</span>
-                    <input type="radio" name="type" id="presencial" required value="presencial" checked/>
-                  </label>
-                  <label class="option flex center" for="online">
-                    <span class="icon-option-color icon-online"></span>
-                    <span>Online</span>
-                    <input type="radio" name="type" id="online" required value="online"/>
-                  </label>
+                  <label for="title">Título</label>
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Nome do evento"
+                    required
+                  />
+                  <span class="alert flex center">
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
                 </div>
-                <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
-              </div>
 
-              <div class="input-wrapper local">
-                <label for="locale">Local</label>
-                <input
-                  type="text"
-                  name="locale"
-                  id="locale"
-                  placeholder="Link ou endereço"
-                  required
-                />
-                <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
-              </div>
+                <div class="input-wrapper inicio">
+                  <label for="initial-date">Início</label>
+                  <input
+                    type="datetime"
+                    name="initial-date"
+                    id="initial-date"
+                    placeholder="DD/MM/AAAA, --:--"
+                    required
+                  />
+                  <span class="alert flex center">
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
+                </div>
 
-              <div class="text-area-wrapper description">
-                <label for="description">Descrição</label>
-                <textarea name="description" id="description" required placeholder="Escreva sobre os detalhes do evento"></textarea>
-                <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
-              </div>
+                <div class="input-wrapper end">
+                  <label for="end-date">Fim</label>
+                  <input
+                    type="datetime"
+                    name="end-date"
+                    id="end-date"
+                    placeholder="DD/MM/AAAA, --:--"
+                    required
+                  />
+                  <span class="alert flex center">
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
+                </div>
+
+                <div class="radio-wrapper type">
+                  <label for="type">Tipo</label>
+                  <div class="type-option flex">
+                    <label class="option flex center" for="presencial">
+                      <span class="icon-option-color icon-inperson"></span>
+                      <span>Presencial</span>
+                      <input
+                        type="radio"
+                        name="type"
+                        id="presencial"
+                        required
+                        value="presencial"
+                        checked
+                      />
+                    </label>
+                    <label class="option flex center" for="online">
+                      <span class="icon-option-color icon-online"></span>
+                      <span>Online</span>
+                      <input
+                        type="radio"
+                        name="type"
+                        id="online"
+                        required
+                        value="online"
+                      />
+                    </label>
+                  </div>
+                  <span class="alert flex center">
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
+                </div>
+
+                <div class="input-wrapper local">
+                  <label for="locale">Local</label>
+                  <input
+                    type="text"
+                    name="locale"
+                    id="locale"
+                    placeholder="Link ou endereço"
+                    required
+                  />
+                  <span class="alert flex center">
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
+                </div>
+
+                <div class="text-area-wrapper description">
+                  <label for="description">Descrição</label>
+                  <textarea
+                    name="description"
+                    id="description"
+                    required
+                    placeholder="Escreva sobre os detalhes do evento"
+                  ></textarea>
+                  <span class="alert flex center">
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
+                </div>
               </div>
             </fieldset>
 
             <fieldset>
               <legend class="cabecalho">
-                <img src="assets/icons/paintbrush-vertical.svg" alt="">
+                <img src="assets/icons/paintbrush-vertical.svg" alt="" />
                 <h3>Personalização</h3>
               </legend>
               <div class="color-picker">
@@ -132,57 +150,113 @@
               </div>
               <div class="color-options">
                 <label for="59B2FF" class="color-option">
-                  <input type="radio" name="main-color" id="59B2FF" value="59B2FF" checked>
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="59B2FF"
+                    value="59B2FF"
+                    checked
+                  />
                   <span class="color-circle color-59B2FF"></span>
                 </label>
-                
+
                 <label for="6A59FF" class="color-option">
-                  <input type="radio" name="main-color" id="6A59FF" value="6A59FF">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="6A59FF"
+                    value="6A59FF"
+                  />
                   <span class="color-circle color-6A59FF"></span>
                 </label>
 
                 <label for="B259FF" class="color-option">
-                  <input type="radio" name="main-color" id="B259FF" value="B259FF">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="B259FF"
+                    value="B259FF"
+                  />
                   <span class="color-circle color-B259FF"></span>
                 </label>
 
                 <label for="FF59F9" class="color-option">
-                  <input type="radio" name="main-color" id="FF59F9" value="FF59F9">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="FF59F9"
+                    value="FF59F9"
+                  />
                   <span class="color-circle color-FF59F9"></span>
                 </label>
 
                 <label for="FF598B" class="color-option">
-                  <input type="radio" name="main-color" id="FF598B" value="FF598B">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="FF598B"
+                    value="FF598B"
+                  />
                   <span class="color-circle color-FF598B"></span>
                 </label>
 
                 <label for="FF5959" class="color-option">
-                  <input type="radio" name="main-color" id="FF5959" value="FF5959">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="FF5959"
+                    value="FF5959"
+                  />
                   <span class="color-circle color-FF5959"></span>
                 </label>
 
                 <label for="FF8B59" class="color-option">
-                  <input type="radio" name="main-color" id="FF8B59" value="FF8B59">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="FF8B59"
+                    value="FF8B59"
+                  />
                   <span class="color-circle color-FF8B59"></span>
                 </label>
 
                 <label for="FFCD59" class="color-option">
-                  <input type="radio" name="main-color" id="FFCD59" value="FFCD59">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="FFCD59"
+                    value="FFCD59"
+                  />
                   <span class="color-circle color-FFCD59"></span>
                 </label>
 
                 <label for="E1FF59" class="color-option">
-                  <input type="radio" name="main-color" id="E1FF59" value="E1FF59">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="E1FF59"
+                    value="E1FF59"
+                  />
                   <span class="color-circle color-E1FF59"></span>
                 </label>
 
                 <label for="59FF91" class="color-option">
-                  <input type="radio" name="main-color" id="59FF91" value="59FF91">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="59FF91"
+                    value="59FF91"
+                  />
                   <span class="color-circle color-59FF91"></span>
                 </label>
 
                 <label for="59FFF9" class="color-option">
-                  <input type="radio" name="main-color" id="59FFF9" value="59FFF9">
+                  <input
+                    type="radio"
+                    name="main-color"
+                    id="59FFF9"
+                    value="59FFF9"
+                  />
                   <span class="color-circle color-59FFF9"></span>
                 </label>
               </div>
@@ -192,88 +266,92 @@
               <span class="title">Tema do evento</span>
               <div class="event-theme grid">
                 <label for="birthday" class="card">
-                  <input type="radio" name="event-option" id="birthday">
-                  <img src="assets/img/birthday.svg" alt="">
+                  <input type="radio" name="event-option" id="birthday" />
+                  <img src="assets/img/birthday.svg" alt="" />
                   <p>Aniversário</p>
                 </label>
 
                 <label for="infantil" class="card">
-                  <input type="radio" name="event-option" id="infantil">
-                  <img src="assets/img/infantil.svg" alt="">
+                  <input type="radio" name="event-option" id="infantil" />
+                  <img src="assets/img/infantil.svg" alt="" />
                   <p>Infantil</p>
                 </label>
 
                 <label for="formatura" class="card">
-                  <input type="radio" name="event-option" id="formatura">
-                  <img src="assets/img/formatura.svg" alt="">
+                  <input type="radio" name="event-option" id="formatura" />
+                  <img src="assets/img/formatura.svg" alt="" />
                   <p>Formatura</p>
                 </label>
 
                 <label for="casamento" class="card">
-                  <input type="radio" name="event-option" id="casamento">
-                  <img src="assets/img/casamento.svg" alt="">
+                  <input type="radio" name="event-option" id="casamento" />
+                  <img src="assets/img/casamento.svg" alt="" />
                   <p>Casamento</p>
                 </label>
 
                 <label for="cha-de-bebe" class="card">
-                  <input type="radio" name="event-option" id="cha-de-bebe">
-                  <img src="assets/img/cha-de-bebe.svg" alt="">
+                  <input type="radio" name="event-option" id="cha-de-bebe" />
+                  <img src="assets/img/cha-de-bebe.svg" alt="" />
                   <p>Chá de bebê</p>
                 </label>
 
                 <label for="cha-de-panela" class="card">
-                  <input type="radio" name="event-option" id="cha-de-panela">
-                  <img src="assets/img/cha-de-panela.svg" alt="">
+                  <input type="radio" name="event-option" id="cha-de-panela" />
+                  <img src="assets/img/cha-de-panela.svg" alt="" />
                   <p>Chá de panela</p>
                 </label>
 
                 <label for="carnaval" class="card">
-                  <input type="radio" name="event-option" id="carnaval">
-                  <img src="assets/img/carnaval.svg" alt="">
+                  <input type="radio" name="event-option" id="carnaval" />
+                  <img src="assets/img/carnaval.svg" alt="" />
                   <p>Carnaval</p>
                 </label>
 
                 <label for="pascoa" class="card">
-                  <input type="radio" name="event-option" id="pascoa">
-                  <img src="assets/img/pascoa.svg" alt="">
+                  <input type="radio" name="event-option" id="pascoa" />
+                  <img src="assets/img/pascoa.svg" alt="" />
                   <p>Páscoa</p>
                 </label>
 
                 <label for="sao-joao" class="card">
-                  <input type="radio" name="event-option" id="sao-joao">
-                  <img src="assets/img/sao-joao.svg" alt="">
+                  <input type="radio" name="event-option" id="sao-joao" />
+                  <img src="assets/img/sao-joao.svg" alt="" />
                   <p>São João</p>
                 </label>
 
                 <label for="hallowen" class="card">
-                  <input type="radio" name="event-option" id="hallowen">
-                  <img src="assets/img/hallowen.svg" alt="">
+                  <input type="radio" name="event-option" id="hallowen" />
+                  <img src="assets/img/hallowen.svg" alt="" />
                   <p>Hallowen</p>
                 </label>
 
                 <label for="natal" class="card">
-                  <input type="radio" name="event-option" id="natal">
-                  <img src="assets/img/natal.svg" alt="">
+                  <input type="radio" name="event-option" id="natal" />
+                  <img src="assets/img/natal.svg" alt="" />
                   <p>Natal</p>
                 </label>
 
                 <label for="outro" class="card">
-                  <input type="radio" name="event-option" id="outro">
-                  <img src="assets/img/outro.svg" alt="">
+                  <input type="radio" name="event-option" id="outro" />
+                  <img src="assets/img/outro.svg" alt="" />
                   <p>Outro</p>
                 </label>
-
               </div>
               <div class="container-fields">
                 <div class="conatiner-style-theme">
                   <span class="title">Estilo</span>
                   <div class="style-theme">
-                    <input type="checkbox" name="checkbox" hidden id="checkbox">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      hidden
+                      id="checkbox"
+                    />
                     <label for="checkbox" class="switch"></label>
                     <span class="theme-label title"></span>
                   </div>
                 </div>
-                <div class="conatiner-photo">
+                <div class="container-photo">
                   <span class="title">Foto de capa</span>
                   <div class="style-photo">
                     <label for="photo-upload">
@@ -281,7 +359,11 @@
                         <span class="icon-upload"></span>
                         <span>Selecionar</span>
                       </div>
-                      <input type="file" name="photo-upload" id="photo-upload">
+                      <input
+                        type="file"
+                        name="photo-upload"
+                        id="photo-upload"
+                      />
                     </label>
                   </div>
                 </div>
@@ -290,51 +372,111 @@
 
             <fieldset>
               <legend class="cabecalho">
-                <img src="assets/icons/contact.svg" alt="">
+                <img src="assets/icons/contact.svg" alt="" />
                 <h3>Dados para contato</h3>
               </legend>
               <div class="container-contact">
                 <div class="input-wrapper name-contact">
                   <label for="contact-name">Nome</label>
-                  <input type="text" name="contact-name" id="contact-name" placeholder="Nome completo" required>
+                  <input
+                    type="text"
+                    name="contact-name"
+                    id="contact-name"
+                    placeholder="Nome completo"
+                    required
+                  />
                   <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
                 </div>
 
                 <div class="input-wrapper email">
                   <label for="contact-email">E-mail</label>
-                  <input type="email" name="contact-email" id="contact-email" placeholder="exemplo@email.com" required>
+                  <input
+                    type="email"
+                    name="contact-email"
+                    id="contact-email"
+                    placeholder="exemplo@email.com"
+                    required
+                  />
                   <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
-              </div>
-               <div class="input-wrapper phone">
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
+                </div>
+                <div class="input-wrapper phone">
                   <label for="contact-phone">Telefone</label>
-                  <input type="phone" name="contact-phone" id="contact-phone" placeholder="(99) 99999-9999" required>
+                  <input
+                    type="phone"
+                    name="contact-phone"
+                    id="contact-phone"
+                    placeholder="(99) 99999-9999"
+                    required
+                  />
                   <span class="alert flex center">
-                  <span class="alert-icon"></span>
-                  <small>Item obrigatório</small>
-                </span>
+                    <span class="alert-icon"></span>
+                    <small>Item obrigatório</small>
+                  </span>
                 </div>
               </div>
             </fieldset>
 
             <fieldset>
               <div class="footer flex">
-                <label for="termos"><span><input type="checkbox" name="termos" id="termos"></span>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>
-                </label>
+                <div class="container-terms">
+                  <label for="termos"
+                    ><span>
+                      <input
+                        type="checkbox"
+                        name="termos"
+                        id="termos"
+                        hidden /><span class="icon-check"></span
+                    ></span>
+                  </label>
+                  <span class="title">
+                    Li e concordo com os <a href="#">Termos e Condições</a> e
+                    com a <a href="#">Política de Privacidade</a>
+                  </span>
+                </div>
 
-                <label for="acept-email"><span><input type="checkbox" name="acept-email" id="acept-email"></span>Aceito receber atualizações e promoções por e-mail
-                </label>
+                <div class="container-terms">
+                  <label for="acept-email"
+                    ><span>
+                      <input
+                        type="checkbox"
+                        name="acept-email"
+                        id="acept-email"
+                        hidden /><span class="icon-check"></span
+                    ></span>
+                  </label>
+                  <span class="title">
+                    Aceito receber atualizações e promoções por e-mail
+                  </span>
+                </div>
 
-                <label for="acept-phone"><span><input type="checkbox" name="acept-phone" id="acept-phone"></span>Aceito receber atualizações e promoções por SMS
-                </label>
+                <div class="container-terms">
+                  <label for="acept-sms"
+                    ><span>
+                      <input
+                        type="checkbox"
+                        name="acept-sms"
+                        id="acept-sms"
+                        hidden /><span class="icon-check"></span
+                    ></span>
+                  </label>
+                  <span class="title">
+                    Aceito receber atualizações e promoções por SMS
+                  </span>
+                </div>
               </div>
             </fieldset>
-            <button type="submit">Enviar</button>
+            <div class="button flex">
+              <button type="submit">
+                <img src="assets/icons/ticket.svg" alt="">
+                <span class="invite">Gerar Convite</span>
+              </button>
+            </div>
           </form>
         </div>
       </div>
